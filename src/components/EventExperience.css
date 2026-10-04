@@ -1,0 +1,196 @@
+.event-experience {
+    padding: 100px 7%;
+
+    background: #ffffff;
+    color: #111111;
+}
+
+.experience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* HEADING */
+
+.experience-heading {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: end;
+
+    margin-bottom: 60px;
+}
+
+.experience-label {
+    color: #2563eb;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.experience-heading h2 {
+    max-width: 600px;
+
+    font-size: 48px;
+    line-height: 1.15;
+
+    margin: 0;
+}
+
+.experience-heading h2 span {
+    color: #2563eb;
+}
+
+.experience-heading > p {
+    color: #555555;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* EVENT CARDS */
+
+.experience-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.experience-card {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #2563eb;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* IMAGE */
+
+.experience-image {
+    width: 100%;
+    height: 250px;
+
+    overflow: hidden;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.experience-card:hover .experience-image img {
+    transform: scale(1.05);
+}
+
+
+/* CONTENT */
+
+.experience-content {
+    padding: 28px;
+}
+
+.experience-content h3 {
+    font-size: 22px;
+
+    margin: 0 0 12px;
+}
+
+.experience-content p {
+    color: #666666;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    margin: 0 0 22px;
+}
+
+.experience-content a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.experience-content a:hover {
+    color: #111111;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .event-experience {
+        padding: 80px 5%;
+    }
+
+    .experience-heading {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .event-experience {
+        padding: 70px 20px;
+    }
+
+    .experience-heading h2 {
+        font-size: 36px;
+    }
+
+    .experience-heading > p {
+        font-size: 16px;
+    }
+
+    .experience-image {
+        height: 230px;
+    }
+
+}

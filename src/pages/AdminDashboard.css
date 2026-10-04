@@ -1,0 +1,479 @@
+.admin-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 60px 24px;
+    color: #111827;
+}
+
+.admin-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.admin-label {
+    margin: 0 0 10px;
+    color: #2563eb;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1.1;
+    color: #111827;
+}
+
+.admin-header h1 span {
+    color: #2563eb;
+}
+
+.admin-description {
+    max-width: 650px;
+    margin: 15px 0 0;
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+/* =========================
+   TOTAL CARD
+========================= */
+
+.admin-total-card {
+    min-width: 230px;
+    background: #111827;
+    color: #ffffff;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(17, 24, 39, 0.12);
+}
+
+.admin-total-card span,
+.admin-total-card small {
+    display: block;
+    color: #d1d5db;
+}
+
+.admin-total-card span {
+    font-size: 0.85rem;
+}
+
+.admin-total-card strong {
+    display: block;
+    margin: 8px 0;
+    color: #ffffff;
+    font-size: 2.4rem;
+}
+
+.admin-total-card small {
+    font-size: 0.75rem;
+}
+
+/* =========================
+   STATISTICS
+========================= */
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.admin-stat-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(17, 24, 39, 0.05);
+}
+
+.admin-stat-card span {
+    display: block;
+    margin-bottom: 12px;
+    color: #6b7280;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.admin-stat-card strong {
+    color: #111827;
+    font-size: 1.8rem;
+}
+
+/* =========================
+   REGISTRATION SECTION
+========================= */
+
+.admin-section {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.05);
+}
+
+.admin-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 28px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-section-header h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 1.6rem;
+}
+
+.admin-section-header h2 span {
+    color: #2563eb;
+}
+
+.admin-section-header > p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.admin-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background: #f8fafc;
+    padding: 16px 18px;
+    color: #6b7280;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.admin-table td {
+    padding: 18px;
+    border-top: 1px solid #eef0f3;
+    vertical-align: middle;
+    color: #374151;
+    font-size: 0.88rem;
+}
+
+.admin-table tbody tr {
+    transition: background 0.2s ease;
+}
+
+.admin-table tbody tr:hover {
+    background: #f8fbff;
+}
+
+/* =========================
+   PARTICIPANT
+========================= */
+
+.participant-name {
+    color: #111827;
+    font-weight: 700;
+}
+
+.participant-id {
+    margin-top: 5px;
+    color: #9ca3af;
+    font-size: 0.7rem;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-info span:first-child {
+    color: #374151;
+    font-weight: 600;
+}
+
+.contact-info span:last-child {
+    color: #9ca3af;
+    font-size: 0.78rem;
+}
+
+/* =========================
+   TICKET BADGE
+========================= */
+
+.ticket-badge {
+    display: inline-block;
+    padding: 7px 10px;
+    background: #eff6ff;
+    border: 1px solid #dbeafe;
+    border-radius: 6px;
+    color: #2563eb;
+    font-size: 0.75rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* =========================
+   AMOUNT
+========================= */
+
+.amount {
+    color: #111827;
+    white-space: nowrap;
+}
+
+/* =========================
+   PAYMENT BADGE
+========================= */
+
+.payment-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 10px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.payment-badge span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+.payment-badge.paid {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.payment-badge.paid span {
+    background: #10b981;
+}
+
+.payment-badge.pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.payment-badge.pending span {
+    background: #f97316;
+}
+
+/* =========================
+   REFERENCE & DATE
+========================= */
+
+.reference {
+    display: block;
+    max-width: 150px;
+    overflow: hidden;
+    color: #6b7280;
+    font-size: 0.75rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.date {
+    color: #6b7280;
+    white-space: nowrap;
+    font-size: 0.8rem;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.admin-empty {
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.admin-empty-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 18px;
+    border: 2px solid #dbeafe;
+    border-radius: 50%;
+    color: #2563eb;
+    font-size: 1.5rem;
+}
+
+.admin-empty h3 {
+    margin: 0 0 8px;
+    color: #111827;
+}
+
+.admin-empty p {
+    margin: 0;
+    color: #6b7280;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.admin-loading {
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-loading p {
+    color: #6b7280;
+}
+
+.admin-spinner {
+    width: 35px;
+    height: 35px;
+    border: 3px solid #dbeafe;
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    animation: adminSpin 0.8s linear infinite;
+}
+
+@keyframes adminSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.admin-error {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.06);
+}
+
+.admin-error-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 20px;
+    background: #eff6ff;
+    border-radius: 50%;
+    color: #2563eb;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.admin-error h1 {
+    margin: 0;
+    color: #111827;
+}
+
+.admin-error h1 span {
+    color: #2563eb;
+}
+
+.admin-error > p {
+    color: #6b7280;
+}
+
+.admin-error-message {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    color: #6b7280;
+    font-size: 0.85rem;
+    word-break: break-word;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .admin-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .admin-header {
+        flex-direction: column;
+    }
+
+    .admin-total-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .admin-page {
+        padding: 40px 15px;
+    }
+
+    .admin-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .admin-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-section-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .admin-section-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .admin-table {
+        min-width: 1050px;
+    }
+}

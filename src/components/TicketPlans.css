@@ -1,0 +1,204 @@
+.ticket-plans {
+    padding: 100px 7%;
+    background: #ffffff;
+    color: #111111;
+}
+
+.ticket-plans-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* HEADING */
+
+.ticket-heading {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.ticket-label {
+    color: #2563eb;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.ticket-heading h2 {
+    font-size: 48px;
+    line-height: 1.15;
+
+    margin: 0 0 20px;
+}
+
+.ticket-heading h2 span {
+    color: #2563eb;
+}
+
+.ticket-heading > p:last-child {
+    color: #555555;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* TICKET GRID */
+
+.ticket-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.ticket-card {
+    position: relative;
+
+    padding: 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+.ticket-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+    border-color: #2563eb;
+}
+
+.ticket-card h3 {
+    font-size: 21px;
+
+    margin: 0 0 25px;
+}
+
+.ticket-price {
+    color: #2563eb;
+
+    font-size: 36px;
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+.ticket-card p {
+    min-height: 55px;
+
+    color: #666666;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+/* BUTTON */
+
+.ticket-button {
+    display: block;
+
+    padding: 12px;
+
+    text-align: center;
+
+    background: #111111;
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.ticket-button:hover {
+    background: #2563eb;
+}
+
+
+/* FEATURED TICKET */
+
+.featured-ticket {
+    border: 2px solid #2563eb;
+
+    transform: translateY(-8px);
+}
+
+.featured-ticket:hover {
+    transform: translateY(-12px);
+}
+
+.popular-badge {
+    position: absolute;
+
+    top: -13px;
+    left: 25px;
+
+    padding: 6px 12px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .ticket-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .ticket-plans {
+        padding: 70px 20px;
+    }
+
+    .ticket-heading h2 {
+        font-size: 36px;
+    }
+
+    .ticket-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-ticket {
+        transform: none;
+    }
+
+    .featured-ticket:hover {
+        transform: translateY(-6px);
+    }
+
+}
