@@ -145,7 +145,7 @@ Deno.serve(async (req) => {
                 body: JSON.stringify({
                     email: user.email,
                     amount: amountInKobo,
-                    callback_url: "http://localhost:5173/payment/callback",
+                    callback_url: "https://eventpro-project-siwes.vercel.app/payment/callback",
 
                     metadata: {
                         user_id: user.id,
